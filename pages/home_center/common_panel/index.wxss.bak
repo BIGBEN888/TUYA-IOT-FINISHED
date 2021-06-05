@@ -1,0 +1,197 @@
+/* miniprogram/pages/home_center/common_panel/index.js.wxss */
+
+.common-panel-backgroud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+	height: 320px;
+	background-color: #27c3d9;
+}
+
+.common-panel-header {
+  z-index: 1;
+  width: 100%;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.common-panel-header-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.common-panel-header-dpName {
+	width: 160px;
+  height: 25px;
+  text-align: center;
+	font-family: HelveticaNeue;
+	font-size: 16px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+	color: rgba(134, 61, 12, 0.575);
+}
+
+.common-panel-header-dpValue {
+	width: 80px;
+	height: 60px;
+  font-family: DINCondensed-Bold;
+  overflow: visible;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+	font-size: 88px;
+	color: rgba(197, 25, 10, 0.438);
+}
+
+.roDpItem-normal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 54px;
+  padding: 16px 2px;
+}
+
+.roDpItem-normal:not(:last-child) {
+  border-right: solid 1px #d6d6d6;
+}
+
+.roDpItem-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 54rpx;
+  padding: 16rpx 33rpx;
+}
+
+.roDpItem-two:not(:last-child) {
+  border-right: solid 1rpx #d6d6d6;
+}
+
+.roDpItem-one {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 64rpx;
+  padding: 20rpx 24rpx;
+  background-color: #fff;
+  border-radius: 14rpx;
+}
+
+.roDpItem-dpName {
+  flex: 1;
+  width: 115px;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  line-height: 24px;
+  color: rgba(80, 80, 80, 0.5);
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.roDpItem-status {
+  width: 115px;
+  text-align: center;
+  font-family: PingFangSC-Semibold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #505050;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.statuslist {
+  padding-top: 16rpx;
+  display: flex;
+  justify-content: center;
+  line-height: 12rpx;
+  flex-wrap: wrap;
+}
+
+.scroll-view {
+  padding: 16px 8px;
+  width: auto;
+  height: 100%;
+}
+
+.show-msg {
+  font-size: auto;
+  padding-left: 25px;
+}
+.bottom-view {
+  position: fixed;
+  bottom: 50rpx;
+  width:100%;
+}
+.bottom-container {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width:100%;
+}
+
+.bottom-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-item {
+  display:flex;
+  width: 48px;
+  height: 48px;
+}
+
+.hover{
+  background-color: gray;
+}
+
+/*以下是定义旋转图案的样式 */
+.bg-rotate{
+	width: 386rpx;
+	height:386rpx;
+	position: absolute;
+	left: 182rpx;
+  top: 168rpx;
+  z-index: 9;
+  -webkit-animation:myRotate 5s linear infinite;
+  animation:myRotate 10s linear infinite;
+}
+.bg-rotate-normal{
+  width: 386rpx;
+	height: 408rpx;
+	position: absolute;
+	left: 182rpx;
+  top: 168rpx;
+  z-index: 9;
+}
+@-webkit-keyframes myRotate{
+    0%{ -webkit-transform: rotate(0deg);}
+    50%{ -webkit-transform: rotate(180deg);}
+    100%{ -webkit-transform: rotate(360deg);}
+}
+@keyframes myRotate{
+    0%{ -webkit-transform: rotate(0deg);}
+    50%{ -webkit-transform: rotate(180deg);}
+    100%{ -webkit-transform: rotate(360deg);}
+}
+.wave{
+  width:750rpx;
+  height:100rpx;
+  mix-blend-mode: screen;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
